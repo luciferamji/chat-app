@@ -14,8 +14,9 @@ if(username!=''&&room!=''&&password!='')
 var roomid={}
 async function abc()    
 { await $.ajax({
-        url: 'https://akshat-chat-app.herokuapp.com/joinroom',
+        url: '/joinroom',
         type: 'post',
+        cache:false,
         dataType: 'json',
         contentType: 'application/json',
         success: (data)=> {

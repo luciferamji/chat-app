@@ -12,6 +12,9 @@ const app = express()
 
 const server = http.createServer(app)
 const io = socketio(server)
+var cors = require('cors')
+
+app.use(cors())
 
 const port = process.env.PORT || 3000
 const publicDirectoryPath = path.join(__dirname, '../public')
