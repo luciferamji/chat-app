@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/styles.css">
+       
+    </head>
+    <body>
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <h1>Create Room</h1>
+                <form >
+                    <label>Display name</label>
+                    <input type="text"  id="name"placeholder="Display name" required autocomplete="off">
+                    <label>Room</label>
+                    <input type="text"placeholder="Room" id="roomname" required autocomplete="off">
+                    <label>Password</label>
+                    <input type="password"  placeholder="ROOM Password" id="cnfpass" required autocomplete="off">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm ROOM Password" id="password" required autocomplete="off">
+                    <button type="button" id="create">Create</button>
+               <p id="message"></p>
+            </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/js/create.js"></script>
+    </body>
+</html>

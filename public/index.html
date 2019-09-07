@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="icon" href="/img/favicon.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <h1>Join</h1>
+                    <form >
+                    <label>Display name</label>
+                    <input type="text" name="username" placeholder="Display name" id="username" required autocomplete="off">
+                    <label>Room</label>
+                    <input type="text" name="room" placeholder="Room" id="room" required autocomplete="off">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="password" id="password" required autocomplete="off">
+                    <p id="message"></p>
+                    <button type="button" id="join">Join</button>
+                </form> 
+                <label >OR you can create your own room</label>
+                <button onclick="window.location.href='/create.html'">Create </button>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/js/index.js"></script>
+    </body>
+</html>
