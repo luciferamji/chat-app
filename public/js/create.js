@@ -12,7 +12,7 @@ $("#create").click(function (){
    var room={name:$("#roomname").val(),password:$("#password").val()}
      async function abc(){
     await $.ajax({
-        url: 'http://localhost:3000/createroom',
+        url: 'https://akshat-chat-app.herokuapp.com/createroom',
         type: 'post',
         dataType: 'json',
         contentType: 'application/json',
